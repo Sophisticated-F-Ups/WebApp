@@ -22,7 +22,7 @@
 
 **Installation**
 
-Download node.js
+Download and install node.js
 
 Locate folder location and open in VS Code
 
