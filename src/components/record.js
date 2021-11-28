@@ -18,33 +18,12 @@ const MyUploader = () => {
 
   // called every time a file's `status` changes
   const handleChangeStatus = ({ meta, file, status }) => {
-    // setNote(transcript);
-    // console.log(status, meta, file);
+
   };
 
   // receives array of files that are done uploading when submit button is clicked
   const handleSubmit = (files, allFiles) => {
-    // setFile(files[0].meta.name);
-    // var formData = new FormData();
-    // formData.append("file", files);
-    // console.log(files[0].meta);
-    // postData(files[0].meta);
-    // console.log(files[0].meta.name);
-    // axios({
-    //   method: 'post',
-    //   url: 'http://lectureleverager.herokuapp.com/upload',
-    //   data: files[0].meta,
-    //   headers: { 'Content-Type': 'multipart/form-data' },
-    // })
-    //   .then(function (response) {
-    //     //handle success
-    //     console.log(response);
-    //   })
-    //   .catch(function (response) {
-    //     //handle error
-    //     console.log(response);
-    //   });
-    // console.log(files.map((f) => f.meta));
+
     allFiles.forEach((f) => f.remove());
   };
 
@@ -54,7 +33,7 @@ const MyUploader = () => {
     //   .then((response) => response.data);
 
     axios
-      .post('http://lectureleverager.herokuapp.com/upload', formData, {
+      .post('https://lectureleverager.herokuapp.com/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -68,22 +47,6 @@ const MyUploader = () => {
         console.log('FAILURE!!');
       });
 
-    // axios({
-    //   method: "post",
-    //   url: "http://lectureleverager.herokuapp.com/upload",
-    //   data: formData,
-    //   headers: { "Content-Type": "multipart/form-data" },
-    // })
-    //   .then(function (response) {
-    //     //handle success
-    //     console.log(response);
-    //   })
-    //   .catch(function (response) {
-    //     //handle error
-    //     console.log(response);
-    //   });
-
-    // console.log(request);
   };
   return (
     <div className="firstContainer">
@@ -95,7 +58,6 @@ const MyUploader = () => {
           accept="image/*,audio/*,video/*"
         />
 
-        {/* <Button colorScheme="blue">Download Text</Button> */}
       </div>
       <div className="box">
       <Heading as="h2" size="lg" color="gray.500">

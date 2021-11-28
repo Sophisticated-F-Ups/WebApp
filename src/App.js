@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { Button, Heading, ChakraProvider } from '@chakra-ui/react';
 import Toggle from './components/Toggle';
 import AudioPanel from './AudioPanel';
-import TextPanel from './TextPanel';
 import './App.css';
 import TranscribedText from './components/TranscribedText';
 import theme from './theme.js';
@@ -20,17 +19,8 @@ function App() {
       <TitleHeader />
       <div className="container">
 
-        {/* <img src={car} alt="this is car image" /> */}
-
-        {/* <Toggle /> */}
-        {/* <ReactAudioPlayer /> */}
-
           <AudioPanel />
 
-        {/* <div className="box">
-          <TextPanel />
-        </div> */}
-        {/* <TranscribedText /> */}
       </div>
       <Record/>
     </ChakraProvider>
