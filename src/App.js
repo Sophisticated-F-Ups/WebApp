@@ -8,6 +8,7 @@ import TextPanel from './TextPanel';
 import './App.css';
 import TranscribedText from './components/TranscribedText';
 import theme from './theme.js';
+import { Switch } from "@chakra-ui/react"
 import Record from './components/liveRecord';
 import TitleHeader from './components/TitleHeader';
 
@@ -23,17 +24,19 @@ function App() {
 
         {/* <Toggle /> */}
         {/* <ReactAudioPlayer /> */}
-        <div className="box">
+
           <AudioPanel />
-        </div>
-        <div className="box">
+
+        {/* <div className="box">
           <TextPanel />
-        </div>
+        </div> */}
         {/* <TranscribedText /> */}
       </div>
       <Record/>
     </ChakraProvider>
   );
 }
+
+
 
 export default App;

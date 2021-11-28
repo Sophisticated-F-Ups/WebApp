@@ -1,5 +1,4 @@
 import React from 'react'
-import { Heading } from '@chakra-ui/react';
 import Toggle from './Toggle';
 import logo from './lectureleverager_banner.png';
 

@@ -6,11 +6,15 @@
     margin-bottom: 20px;
 }
 
-.container {
+.right {
+  text-align: right;
+  vertical-align: middle;
+}
+/* .container {
   margin: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
+} */
 
 
 .root{
