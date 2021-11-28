@@ -20,3 +20,10 @@
 - name: Gavin Dang
 - email: ttd6@sfu.ca
 
+**Installation**
+
+Download node.js
+
+Locate folder location and open in VS Code
+
+Type `npm start`
